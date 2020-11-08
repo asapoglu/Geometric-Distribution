@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="panel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="624.0" prefWidth="906.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="geom.Controller">
+    <children>
+        <LineChart fx:id="birikimliDagilim" layoutX="3.0" layoutY="-32.0" prefHeight="483.0" prefWidth="904.0" stylesheets="@sytle.css" title="Dağılım" AnchorPane.bottomAnchor="173.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="-32.0">
+            <xAxis>
+                <CategoryAxis label="X" prefHeight="36.0" prefWidth="826.0" side="BOTTOM" fx:id="x" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis fx:id="y" label="P" side="LEFT" />
+            </yAxis>
+        </LineChart>
+        <Button fx:id="btn_ciz" layoutX="213.0" layoutY="499.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="74.0" prefWidth="192.0" text="Grafik Ciz" AnchorPane.bottomAnchor="51.0">
+            <font>
+                <Font name="Consolas Bold" size="15.0" />
+            </font>
+        </Button>
+        <TextField fx:id="pid" layoutX="126.0" layoutY="481.0" prefHeight="27.0" prefWidth="45.0" AnchorPane.bottomAnchor="98.0">
+            <font>
+                <Font name="Consolas" size="13.0" />
+            </font>
+        </TextField>
+        <Text layoutX="40.0" layoutY="454.0" strokeType="OUTSIDE" strokeWidth="0.0" text="P Değeri :" wrappingWidth="81.005859375" AnchorPane.bottomAnchor="105.3974609375">
+            <font>
+                <Font name="Consolas" size="14.0" />
+            </font>
+        </Text>
+        <TextField layoutX="126.0" layoutY="486.0" prefHeight="27.0" prefWidth="45.0" AnchorPane.bottomAnchor="50.0" fx:id="xid">
+            <font>
+                <Font name="Consolas" size="13.0" />
+            </font>
+        </TextField>
+        <Text layoutX="40.0" layoutY="503.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X Değeri :" wrappingWidth="81.005859375" AnchorPane.bottomAnchor="56.3974609375">
+            <font>
+                <Font name="Consolas" size="14.0" />
+            </font>
+        </Text>
+        <Label fx:id="lbl_uyari" alignment="CENTER" layoutX="1.0" layoutY="400.0" prefHeight="30.0" prefWidth="906.0" textAlignment="JUSTIFY" textFill="#cd0707" AnchorPane.bottomAnchor="133.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0">
+            <font>
+                <Font name="Consolas Bold" size="13.0" />
+            </font>
+        </Label>
+        <ImageView fx:id="varyans" fitHeight="50.0" fitWidth="56.0" layoutX="511.0" layoutY="502.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="72.0">
+            <image>
+                <Image url="@varyans.png" />
+            </image>
+        </ImageView>
+        <Text fontSmoothingType="LCD" layoutX="429.0" layoutY="531.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Varians =" wrappingWidth="81.005859375" AnchorPane.bottomAnchor="88.0">
+            <font>
+                <Font name="Consolas Bold" size="16.0" />
+            </font>
+        </Text>
+        <Text fontSmoothingType="LCD" layoutX="564.0" layoutY="532.0" strokeType="OUTSIDE" strokeWidth="0.0" text="=" wrappingWidth="19.005859375" AnchorPane.bottomAnchor="88.0">
+            <font>
+                <Font name="Consolas Bold" size="16.0" />
+            </font>
+        </Text>
+        <TextField fx:id="vary" layoutX="583.0" layoutY="513.0" prefHeight="27.0" prefWidth="67.0" AnchorPane.bottomAnchor="84.0">
+            <font>
+                <Font name="Consolas" size="13.0" />
+            </font>
+        </TextField>
+        <ImageView fx:id="mean" fitHeight="50.0" fitWidth="56.0" layoutX="732.0" layoutY="502.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="72.0">
+            <image>
+                <Image url="@mean.png" />
+            </image>
+        </ImageView>
+        <Text fontSmoothingType="LCD" layoutX="676.0" layoutY="531.8828125" strokeType="OUTSIDE" strokeWidth="0.0" text="Mean =" wrappingWidth="56.005859375" AnchorPane.bottomAnchor="88.0">
+            <font>
+                <Font name="Consolas Bold" size="16.0" />
+            </font>
+        </Text>
+        <Text fontSmoothingType="LCD" layoutX="753.0" layoutY="531.8828125" strokeType="OUTSIDE" strokeWidth="0.0" text="=" wrappingWidth="19.005859375" AnchorPane.bottomAnchor="88.0">
+            <font>
+                <Font name="Consolas Bold" size="16.0" />
+            </font>
+        </Text>
+        <TextField fx:id="mea" layoutX="766.0" layoutY="513.0" prefHeight="27.0" prefWidth="67.0" AnchorPane.bottomAnchor="84.0">
+            <font>
+                <Font name="Consolas" size="13.0" />
+            </font>
+        </TextField>
+    </children>
+</AnchorPane>
